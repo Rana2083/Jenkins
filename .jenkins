@@ -40,7 +40,7 @@ echo 'deploying the code'
 
 }
 
-stage('test')
+stage('Smoke Testing')
 
 {
 
@@ -56,7 +56,7 @@ bat "mvn test"
 
 
 
-stage('Unit Testing')
+stage('Sanity Testing')
 
 {
 
@@ -70,30 +70,16 @@ bat "mvn compile"
 
 }
 
-stage('Release')
+stage('Regression Testing')
 
 {
-
-
-
 steps{
 
 echo 'releasing the project'
 
 }
 
-
-
+stage('Reporting Test results')
 }
-
-
-
-
-
-
-
 }
-
-
-
 }
