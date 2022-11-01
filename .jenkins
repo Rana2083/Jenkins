@@ -80,6 +80,6 @@ echo 'releasing the project'
 }
 }
 
-stage('Reporting Test results')
+stage('Reporting Test results'){
 }
 }
