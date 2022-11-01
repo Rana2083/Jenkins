@@ -81,6 +81,11 @@ echo 'releasing the project'
 }
 
 stage('Reporting Test results'){
+steps{
+
+echo 'Reporting the test results'
+
+}
 }
 }
 }
