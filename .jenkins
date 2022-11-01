@@ -78,6 +78,7 @@ steps{
 echo 'releasing the project'
 
 }
+}
 
 stage('Reporting Test results')
 }
